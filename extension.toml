@@ -1,0 +1,18 @@
+id = "mlua"
+name = "mLua"
+description = "mLua language support for Zed using the official VS Code language server package."
+version = "0.1.0"
+schema_version = 1
+authors = ["pid011"]
+repository = "https://github.com/pid011/mlua-zed"
+
+[language_servers.mlua-language-server]
+name = "mLua Language Server"
+languages = ["mLua"]
+
+[language_servers.mlua-language-server.language_ids]
+"mLua" = "mlua"
+
+[grammars.lua]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-lua"
+commit = "d76023017f7485eae629cb60d406c7a1ca0f40c9"
