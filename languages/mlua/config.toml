@@ -1,5 +1,5 @@
 name = "mLua"
-grammar = "lua"
+grammar = "mlua"
 path_suffixes = ["mlua"]
 line_comments = ["-- "]
 tab_size = 4

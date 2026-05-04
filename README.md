@@ -17,7 +17,7 @@ it as a Zed dev extension from a local checkout.
 ## Features
 
 - `.mlua` file association and language registration
-- Syntax highlighting for Lua and common mLua declarations
+- mLua-aware Tree-sitter syntax highlighting
 - Official MSW mLua language server bridge
 - Completion, diagnostics, hover, references, rename, inlay hints, formatting,
   and semantic tokens through the bundled language server
@@ -70,10 +70,6 @@ The extension does not reimplement the mLua language server. Instead, it:
 3. Starts the official language server with a Node.js wrapper that adapts it for
    Zed's LSP runtime.
 4. Reuses the cached package when Marketplace is unavailable.
-
-The current syntax parser is `tree-sitter-lua`, so syntax-tree features for
-mLua-only constructs are best effort. The official language server is the source
-of truth for semantic features.
 
 ## Troubleshooting
 
